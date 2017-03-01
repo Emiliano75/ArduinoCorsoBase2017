@@ -23,7 +23,7 @@ analogWrite(RED_LED, 0);
 analogWrite(GREEN_LED, 0);
 
 
-for(byte i=0; i<=16; i++){
+for(byte i=1; i<=16; i++){
   analogWrite(RED_LED, pow(i,2)-1);
   analogWrite(GREEN_LED, pow(i,2)-1);
   delay(100);
