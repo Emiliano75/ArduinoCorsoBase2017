@@ -20,12 +20,14 @@ __version__ = "1.0" 06/03/2017
 #define Tasto 8
 
 // variabile byte per gestire il cambio di colore del LED
-  // R G B  color
-  // 0 0 0  (0) OFF
-  // 1 0 0  (1) LED ROSSO
-  // 0 1 0  (2) LED VERDE
-  // 0 0 1  (3) LED BLU
 byte color=0;
+
+// R G B  color
+// 0 0 0  (0) OFF
+// 1 0 0  (1) LED ROSSO
+// 0 1 0  (2) LED VERDE
+// 0 0 1  (3) LED BLU
+
 
 
 
@@ -42,11 +44,11 @@ void setup() {
 void loop() {
   
   // Controllo se il tasto viene premuto e rilasciato
- if(!digitalRead(Tasto)){ // tasto premuto
+ if(!digitalRead(Tasto)){ // -->tasto premuto
   delay(100); // per limitare il problema dei rimbalzi
-  while(!digitalRead(Tasto)); //tasto ancora premuto
+  while(!digitalRead(Tasto)); // -->tasto ancora premuto
    
-   // tasto rilasciato
+   // -->tasto rilasciato
    // Ogni volta incremento la variabile color e poi ne faccio modulo 4
   color=(color + 1) % 4;
 
