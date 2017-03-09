@@ -14,9 +14,9 @@ __version__ = "1.0" 06/03/2017
 */
 
 // Definisco i pin di collegamenti dei LED e del tasto senza occupare la memoria di Arduino
-#define LEDRosso 2
-#define LEDVerde 3
-#define LEDBlu 4
+#define LEDRosso 6
+#define LEDVerde 5
+#define LEDBlu 3
 #define Tasto 8
 
 // variabile byte per gestire il cambio di colore del LED
