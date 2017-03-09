@@ -12,9 +12,9 @@ __version__ = "1.0"
 ***************************************************************************
 */
 
-int LDR = 0; // Pin Fotoresistenza
-int LED = 11; // Pin LED
-int LM35DZ = 1; // Pin Sensore Temperatura
+#define LDR A0 // Pin Fotoresistenza
+#define LED 11 // Pin LED
+#define LM35DZ A1 // Pin Sensore Temperatura
 
 void setup()
 {
