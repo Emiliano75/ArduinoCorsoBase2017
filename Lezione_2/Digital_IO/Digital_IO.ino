@@ -11,13 +11,13 @@ __History__: (repeat the following line as many times as applicable)
 __version__ = "1.0"
 ***************************************************************************
 */
-
 # define Pulsante 7
 # define LedVerde 2
 # define LedRosso 3
 byte StatoPulsante = 0;
 byte UltimoStatoPulsante = 0;
 byte StatoSistema = 0;
+byte Antirimbalzo = 50;
 
 void setup() {
   pinMode(Pulsante, INPUT);
@@ -27,11 +27,13 @@ void setup() {
 
 void loop() {
   StatoPulsante = digitalRead(Pulsante);
-  delay(25);
-  StatoPulsante = digitalRead(Pulsante);
+  if(StatoPulsante != 0) {
+    delay(Antirimbalzo);
+    StatoPulsante = digitalRead(Pulsante);
     if((StatoPulsante == HIGH && UltimoStatoPulsante == LOW)) {
       StatoSistema = 1 - StatoSistema;
     }
+  }
     UltimoStatoPulsante = StatoPulsante;
     if(StatoSistema == 1) {
       digitalWrite(LedRosso, HIGH);
@@ -41,3 +43,4 @@ void loop() {
       digitalWrite(LedVerde, HIGH);      
     }
 }
+
