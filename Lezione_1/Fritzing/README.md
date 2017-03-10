@@ -1,2 +1,2 @@
 #Fritzing
-File di progetto Fritzing, lezione 1
+In questa cartella si trovano i file di progetto della Lezione_1, eseguibili e modificabili con Fritzing.
