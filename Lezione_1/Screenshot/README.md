@@ -1,2 +1,2 @@
 #Screenshot
-In questa cartella si trovano le immagini dei collegamenti su breadboard, della Lezione_1.
+In questa cartella si trovano le immagini dei collegamenti elettrici su breadboard, della Lezione_1.
