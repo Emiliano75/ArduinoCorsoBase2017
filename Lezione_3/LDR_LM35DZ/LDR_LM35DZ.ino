@@ -30,7 +30,7 @@ void loop()
     // Serial.println(LDRValue); // Scrivo sul monitor seriale il valore di LDRValue         
 
     int ValoreSensoreTemp = analogRead(LM35DZ); // Leggo il valore della sonda
-    float GradiCeltius = (5.0 * ValoreSensoreTemp * 100)/1023.0; // Trasformo il valore rilevato in gradi celtius
+    float GradiCeltius = (5.0 * ValoreSensoreTemp * 100)/1024.0; // Trasformo il valore rilevato in gradi celtius
 
     Serial.print("Temperatura rilevata = "); // Stampo sul monitor seriale il valore espresso in gradi celtius
     Serial.print(GradiCeltius);
