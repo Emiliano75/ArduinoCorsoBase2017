@@ -1,4 +1,4 @@
-#Contenuto cartelle  
+# Contenuto cartelle  
 Nella cartella "LDR_LM35DZ" potrete trovare il codice sorgente della Lezione_3, LDR_LM35DZ.ino.  
 Nella cartella "Luxmetro" potrete trovare il codice sorgente della Lezione_3, Luxmetro.ino.  
 Nella cartella "Fritzing" potrete trovare i progetti realizzati con Fritzing, dei collegamenti elettrici sulla breadboard.  
