@@ -25,7 +25,7 @@ void setup()
 void loop()
 {
     int LDR_RAW = analogRead(LDR); // Scrivo il valore grezzo rilevato sul pin collegato alla LDR
-    int LDRValue = map(LDR_RAW, 0, 300, 255, 0); 
+    int LDRValue = map(LDR_RAW, 0, 1023, 255, 0); 
     analogWrite(LED, LDRValue);  // Con analogWrite piloto un segnale PWM grande quanto il valore di LDRValue
     // Serial.println(LDRValue); // Scrivo sul monitor seriale il valore di LDRValue         
 
