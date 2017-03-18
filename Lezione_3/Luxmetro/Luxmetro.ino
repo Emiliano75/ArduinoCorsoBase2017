@@ -13,7 +13,7 @@ __version__ = "1.0"
 */
 
 #define LDR A0 // Pin Fotoresistenza
-#define RPD 100 // resistenza pull down della LDR in KOhm
+#define RPD 10 // resistenza pull down della LDR in KOhm
 
 
 // Calcolo valore in Lux dal valore dell resistenza: L=(R*10^(-b))^(1/m) dove vale la formula log(R)=m*log(L)+b che approssima il grafico
@@ -28,7 +28,7 @@ float Lux=0.0; // Valore in Lux dell'illuminamento
 //calcola il valore in Lux ricavato dalla resistenza della LDR
 float  R2Lux(float Res){
   // implemento la funzione  L=(R*10^(-b))^(1/m)
-  return pow(Res*pow(10,-b),1\m);
+  return pow(Res*pow(10,-b),1/m);
 }
 
 
