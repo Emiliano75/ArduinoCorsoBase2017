@@ -13,7 +13,7 @@ __version__ = "1.0"
 */
 
 #define LDR A0 // Pin Fotoresistenza
-#define RPD 10000 // resistenza pull down della LDR
+#define RPD 100 // resistenza pull down della LDR in KOhm
 
 
 // Calcolo valore in Lux dal valore dell resistenza: L=(R*10^(-b))^(1/m) dove vale la formula log(R)=m*log(L)+b che approssima il grafico
