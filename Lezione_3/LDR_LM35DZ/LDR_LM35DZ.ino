@@ -24,16 +24,16 @@ void setup()
 
 void loop()
 {
-    int LDR_RAW = analogRead(LDR); // Scrivo il valore grezzo rilevato sul pin collegato alla LDR
+    int LDR_RAW = analogRead(LDR); // Leggo il valore grezzo rilevato sul pin collegato alla LDR
     int LDRValue = map(LDR_RAW, 0, 1023, 255, 0); 
     analogWrite(LED, LDRValue);  // Con analogWrite piloto un segnale PWM grande quanto il valore di LDRValue
     // Serial.println(LDRValue); // Scrivo sul monitor seriale il valore di LDRValue         
 
     int ValoreSensoreTemp = analogRead(LM35DZ); // Leggo il valore della sonda
-    float GradiCeltius = (5.0 * ValoreSensoreTemp * 100)/1024.0; // Trasformo il valore rilevato in gradi celtius
+    float GradiCelsius = (5.0 * ValoreSensoreTemp * 100)/1024.0; // Trasformo il valore rilevato in gradi celsius
 
-    Serial.print("Temperatura rilevata = "); // Stampo sul monitor seriale il valore espresso in gradi celtius
-    Serial.print(GradiCeltius);
+    Serial.print("Temperatura rilevata = "); // Stampo sul monitor seriale il valore espresso in gradi celsius
+    Serial.print(GradiCelsius);
     Serial.println(" °C");
     delay(10);
 }
