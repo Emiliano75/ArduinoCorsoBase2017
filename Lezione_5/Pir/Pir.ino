@@ -2,7 +2,7 @@
 /*
  *********************Arduino Source File Header**************************
 __file_name__ = "Pir.ino"
-__description__="Codice seconda lezione corso Arduino Base"
+__description__="Codice quinta lezione corso Arduino Base"
 __author__ = "Daniele Forsi"
 __copyright__ = "Informazioni di Copyright"
 __license__ = "GPL"
