@@ -1,3 +1,18 @@
+
+/*
+ *********************Arduino Source File Header**************************
+__file_name__ = "Pir.ino"
+__description__="Codice seconda lezione corso Arduino Base"
+__author__ = "Daniele Forsi"
+__copyright__ = "Informazioni di Copyright"
+__license__ = "GPL"
+__email__ = "dforsi@gmail.com"
+__status__ = "Development[]";"Test[]";"Production[X]";
+__History__: (repeat the following line as many times as applicable)
+__version__ = "1.0"
+***************************************************************************
+*/
+
 #define DEBUG 2
 
 #define SENSOR_PIN 2
